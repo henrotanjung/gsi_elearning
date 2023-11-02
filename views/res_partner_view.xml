@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_elearning" model="ir.ui.view">
+        <field name="name">res.partner.form.elearning</field>
+        <field name="model">res.partner</field>
+        <!-- <field name="priority">1</field> -->
+        <!-- <field name="mode">primary</field> -->
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='function']" position="before">
+                <field name="nik" />
+                <field name="instansi" />
+                <field name="notifikasi" />
+                <field name="pekerjaan" string="Pekerjaan"/>
+                <field name="pekerjaan_lainnya" />
+                <field name="type_pendaftaran" />
+                <field name="referensi" />
+                <field name="referensi_lainnya" />
+            </xpath>
+            <field name="function" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="category_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+    
+</odoo>

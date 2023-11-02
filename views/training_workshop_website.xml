@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+    <!-- <template id="courseaa" name="Main Frontend Layout">
+    <t t-call="website.layout" />
+      
+  </template> -->
+
+    <template id="training_workshop">
+        <title>Training and Workshop</title>
+
+
+        <t t-call="gsi_elearning.head_elearning_website" />
+
+
+        <body data-spy="scroll" data-target=".fixed-top">
+
+            <!-- Navigation -->
+            <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+
+            <!-- Header -->
+            <header id="header_course" class="header_course">
+                <div class="container ">
+                    <div class="row">
+                        <img src="https://academy.gsilab.id/img/background_training.png"
+                            style="width: 330px; margin-top: 0px; margin-left: 759px;" alt="" />
+                        <div class="col-lg-5">
+                            <div class="text-container"
+                                style="margin-left: 0px; margin-top: -290px; height: 150px;">
+                                <h1 class="text-banner-course text-banner-abu"><span
+                                        class="text-banner-blue">Butuh
+                                        Training</span> Tim Anda? Agar Lebih <span
+                                        class="text-banner-blue">Kompeten?</span>
+                                </h1>
+
+                                <div class="input-group ">
+                                    <div>
+                                        <input type="search " id="form1 " class="form-control "
+                                            placeholder="Search"
+                                            style="margin-top: 59px; width: 350px;" />
+                                        <!-- <label class="form-label " for="form1 ">Search</label> -->
+                                    </div>
+                                    <button id="search-button " type="button "
+                                        class="btn btn-primary"
+                                        style="margin-top: 59px;">
+                                        <i class="fas fa-search "></i>
+                                    </button>
+                                </div>
+                                <!-- <a class="btn-solid-lg page-scroll " href="#about
+                                ">Discover</a>
+                      <a class="btn-outline-lg page-scroll " href="#contact "><i class="fas fa-user "></i>Contact Me</a> -->
+                            </div>
+                            <!-- end of text-container -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </header>
+            <!-- end of header -->
+
+
+            <!-- Services -->
+            <div id="services " class="basic-2 basic-custom ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-12 mb-4 ">
+                            <h2 class="h2-heading ">Alur <span style="color: #F39501 "> Training
+                                &amp; Workshop</span>
+                            </h2>
+                            <!-- <p class="p-heading ">Web design and development have been my bread
+                            and butter
+              for more than 5 years. During that time I've discovered that I can help startups and
+              companies with the following services</p> -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                    <div class="row ">
+                        <div class="col-lg-4 text-center" style="width: 300px;">
+                            <img src="https://academy.gsilab.id/img/alur_belajar_kelas1.png "
+                                alt=" "
+                                style="background-size: cover;  border-top-left-radius: 10px; border-top-right-radius: 7px; " />
+                            <p class="text-center mt-3">
+                                <strong>Pilih Training / Workshop</strong>
+                            </p>
+
+                            <!-- end of text-box -->
+                        </div>
+                        <!-- end of col -->
+                        <div class="col-lg-4 text-center ">
+                            <img src="https://academy.gsilab.id/img/alur_belajar_kelas2.png "
+                                alt=" "
+                                style="background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; width: 300px;" />
+                            <p class="text-center mt-3">
+                                <strong>Selesaikan <br />Training / Workshop Anda</strong>
+                            </p>
+                            <!-- end of text-box -->
+                        </div>
+                        <!-- end of col -->
+                        <div class="col-lg-4 text-center " style="width: 100px ">
+                            <img src="https://academy.gsilab.id/img/alur_belajar_kelas3.png "
+                                alt=" "
+                                style="background-size: cover; width: 300px; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+
+                            <p class="text-center mt-3">
+                                <strong>Dapatkan Sertifikat </strong>
+                            </p>
+
+                            <!-- end of text-box -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of basic-2 -->
+            <!-- end of services -->
+
+            <!-- Projects -->
+            <div class="container">
+                <div id="projects " class="basic-3 " style="margin-top: -30px; ">
+                    <div class="container " style="padding-top: 0px;">
+                        <div class="row ">
+                            <div class="col-lg-12 mt-3">
+                                <h2 class="h2-heading "
+                                    style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; ">Training
+                                    &amp; Workshop <span style="color: #0080bb; ">Populer</span>
+
+                                </h2>
+                                <br />
+                                <p class="text-center">
+
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        PGTA</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">Lifestyle
+                                        Genomics</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">Laboratorium
+                                        Umum</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        nipt</a>
+
+                                </p>
+                                <br />
+                                <p class="text-center">
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        LSC</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        Webinar</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        LSC</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        Webinar</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        LSC</a>
+                                    <a class="bg-gray " href="https://"
+                                        style="margin-right: 50px; padding: 10px; border-radius: 10px;">
+                                        Webinar</a>
+                                </p>
+                                <br />
+                            </div>
+                            <!-- end of col -->
+                        </div>
+                        <!-- end of row -->
+
+                    </div>
+                    <!-- end of container -->
+                </div>
+                <!-- end of basic-3 -->
+                <!-- end of projects -->
+
+
+                <!-- Works -->
+                <div id="services " class="basic-custom">
+                    <div class="container ">
+                        <div class="row ">
+                            <div style="width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita1.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Course Title</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">100%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/star.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 4.5 / 5.0</span>
+                                    </div>
+                                    <div class="mt-1 ">
+                                        <img src="https://academy.gsilab.id/img/stack.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 12 Materi</span>
+                                    </div>
+                                    <br />
+                                    <p>This live short course provides knowledge ranging from the
+                                        introduction to medical statistics, hypothesis </p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita2.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Course Title</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">50%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/star.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 4.5 / 5.0</span>
+                                    </div>
+                                    <div class="mt-1 ">
+                                        <img src="https://academy.gsilab.id/img/stack.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 12 Materi</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Course Title</h5>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/star.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 4.5 / 5.0</span>
+                                    </div>
+                                    <div class="mt-1 ">
+                                        <img src="https://academy.gsilab.id/img/stack.png "
+                                            style="width: 20px; " alt=" " />
+                                        <span class="star-text-normal "> 12 Materi</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                        </div>
+                        <div class="row mt-4 ">
+                            <!-- <div class="col-4 "></div> -->
+                            <div class="col-4 offset-4 mb-5 ">
+                                <button class="btn btn-primary button-mulai-sekarang "
+                                    style="width: 100%; border-radius: 10px; ">Lihat Selengkapnya</button>
+                            </div>
+                            <!-- <div class="col-4 "></div> -->
+
+                        </div>
+                        <!-- end of row -->
+                        <!-- </div> -->
+                        <!-- end of container -->
+                    </div>
+                </div>
+                <!-- end of basic-4 -->
+                <!-- end of works -->
+
+                <!-- Details -->
+                <div class="basic-custom">
+                    <div class="container ">
+                        <div class="text-center">
+                            <div class="row">
+                                <div style="margin-right: 20px">
+                                    <img src="https://academy.gsilab.id/img/mentor1.png" alt="" />
+                                    <div class="text-box ">
+                                        <div>
+                                            <h5 class="mt-3 ">Name Mentor</h5>
+                                            <p style="font-weight:normal">Job Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 33%; padding-top: 10%;">
+                                    <img src="https://academy.gsilab.id/img/mentor2.png" alt="" />
+                                    <div class="text-box ">
+                                        <div>
+                                            <h5 class="mt-3 ">Name Mentor</h5>
+                                            <p style="font-weight:normal">Job Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 33%">
+                                    <img src="https://academy.gsilab.id/img/mentor3.png" alt="" />
+                                    <div class="text-box ">
+                                        <h5 class="mt-3 ">Name Mentor</h5>
+                                        <p style="font-weight:normal">Job Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div>
+                                    <!-- Text Container -->
+                                    <div class="text-container ">
+                                        <div>
+                                            <img
+                                                src="https://academy.gsilab.id/img/background_dibimbing.png "
+                                                alt=" "
+                                                style="background-size: cover; width: 1090px; margin-left: 0px; margin-top: -350px; position: relative; z-index: -1; max-height: 500px;" />
+                                        </div>
+                                        <div style="margin-top: -130px">
+                                            <h2 class="h2-heading" style="position: relative">
+                                                Dibimbing <span
+                                                    style="font-weight: 500; font-size: 30px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #F39501; ">Mentor
+                                                Berpengalaman</span>
+                                            </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Dolor, quod. Rem beatae nesciunt doloremque
+                                                molestias dolore porro quas unde aspernatur!</p>
+                                        </div>
+
+                                        <!-- end of icons-container -->
+                                    </div>
+                                    <!-- end of text-container -->
+                                    <!-- end of text container -->
+
+                                </div>
+                                <!-- end of col -->
+                            </div>
+
+                            <!-- end of area-2 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 70px;">
+                    <div class="row">
+                        <h2
+                            style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #0080bb; ">Training
+                            &amp; Workshop <span style=" color: black; ">Kami</span>
+                        </h2>
+                        <div class="input-group ">
+                            <div>
+                                <input id="search-input " type="search " class="form-control "
+                                    placeholder="Filter Course"
+                                    style="margin-top: 15px; width: 1103px;" />
+                                <!-- <img src="images/filter.png" style="width: 20px; margin-left:
+                                -70px;" alt=""> -->
+                                <!-- <label class="form-label " for="form1 ">Search</label> -->
+                            </div>
+                            <button id="search-button " type="button " class="btn "
+                                style="margin-top: 15px; margin-left: -90px;">
+                                <!-- <i class="fas fa-search "></i> -->
+                                <img src="https://academy.gsilab.id/img/filter.png"
+                                    style="width: 20px; margin-left: 50px;" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="container ">
+
+                    <!-- end of basic-3 -->
+                    <!-- end of projects -->
+
+
+                    <!-- Works -->
+                    <div id="services " class="basic-custom mt-2 ">
+                        <div class="row ">
+                            <div style="width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita1.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">ONT Post-NGS Workflow</h5>
+                                        </div>
+                                        <!-- <div class="col-1 " style="text-align: right; ">
+                                  <button class="btn btn-primary btn-sm mt-3 " style="background-color: #F39501 ; height: 28px;
+                                        border-radius: 10px; "><h6 class="text-lihat-detail "
+                                        style="color: white; line-height: 120%; ">100%</h6></button>
+                              </div> -->
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">16s Bacterial Sequencing using ONT</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">50%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita2.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Whole Bacteria Genome Sequencing using
+                                                ONT</h5>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+
+
+                            <!-- end of col -->
+                        </div>
+                        <!-- end of row -->
+                        <!-- end of container -->
+                    </div>
+                    <div id="services " class="basic-custom mt-2 ">
+                        <div class="row ">
+                            <div style="width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita1.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">ONT Post-NGS Workflow</h5>
+                                        </div>
+                                        <!-- <div class="col-1 " style="text-align: right; ">
+                                  <button class="btn btn-primary btn-sm mt-3 " style="background-color: #F39501 ; height: 28px;
+                                        border-radius: 10px; "><h6 class="text-lihat-detail "
+                                        style="color: white; line-height: 120%; ">100%</h6></button>
+                              </div> -->
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">16s Bacterial Sequencing using ONT</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">50%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita2.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Whole Bacteria Genome Sequencing using
+                                                ONT</h5>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                        </div>
+
+                        <!-- end of row -->
+                        <!-- end of container -->
+                    </div>
+                    <div id="services " class="basic-custom mt-2 ">
+                        <div class="row ">
+                            <div style="width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita1.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">ONT Post-NGS Workflow</h5>
+                                        </div>
+                                        <!-- <div class="col-1 " style="text-align: right; ">
+                                  <button class="btn btn-primary btn-sm mt-3 " style="background-color: #F39501 ; height: 28px;
+                                        border-radius: 10px; "><h6 class="text-lihat-detail "
+                                        style="color: white; line-height: 120%; ">100%</h6></button>
+                              </div> -->
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">16s Bacterial Sequencing using ONT</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">50%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita2.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Whole Bacteria Genome Sequencing using
+                                                ONT</h5>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                        </div>
+                        <!-- end of row -->
+                        <!-- end of container -->
+                    </div>
+                    <div id="services " class="basic-custom mt-2 ">
+                        <div class="row ">
+                            <div style="width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita1.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">ONT Post-NGS Workflow</h5>
+                                        </div>
+                                        <!-- <div class="col-1 " style="text-align: right; ">
+                                  <button class="btn btn-primary btn-sm mt-3 " style="background-color: #F39501 ; height: 28px;
+                                        border-radius: 10px; "><h6 class="text-lihat-detail "
+                                        style="color: white; line-height: 120%; ">100%</h6></button>
+                              </div> -->
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">16s Bacterial Sequencing using ONT</h5>
+                                        </div>
+                                        <div class="col-1 " style="text-align: right; ">
+                                            <button class="btn btn-primary btn-sm mt-3 "
+                                                style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                                                <h6 class="text-lihat-detail "
+                                                    style="color: white; line-height: 120%; ">50%</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                            <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                                <img src="https://academy.gsilab.id/img/kelas_yg_diminita2.png "
+                                    alt=" "
+                                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                                <div class="text-box ">
+                                    <!-- <i class="far fa-gem "></i> -->
+                                    <div class="row ">
+                                        <div class="col-9 ">
+                                            <h5 class="mt-3 ">Whole Bacteria Genome Sequencing using
+                                                ONT</h5>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img src="https://academy.gsilab.id/img/calendar.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">10 Juli 2023</span>
+                                    </div>
+                                    <div class="mt-2 ">
+                                        <img src="https://academy.gsilab.id/img/maps.png "
+                                            style="width: 24px; " />
+                                        <span class="star-text-normal ">Indonesia International
+                                            Institute for Life Sciences (i3L)</span>
+                                    </div>
+                                    <br />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nisi alias corporis nulla numquam!</p>
+                                    <div class="row ">
+                                        <div class="col-6 ">
+                                            <del>
+                                                <h6 style="color: red ">Rp. 50.000</h6>
+                                            </del>
+                                        </div>
+                                        <div class="col-6 " style="text-align: right; ">
+                                            <h6>Gratis</h6>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <button class="btn btn-primary button-mulai-sekarang "
+                                        style="width: 100%; border-radius: 10px; ">Lihat</button>
+                                    <div style="height: 10px; "></div>
+                                </div>
+                                <!-- end of text-box -->
+                            </div>
+                            <!-- end of col -->
+                        </div>
+                        <!-- end of row -->
+                        <!-- end of container -->
+                    </div>
+                </div>
+
+                <div class="split row mt-5 ">
+                    <div class="container ">
+                        <!-- end of area-1 on same line and no space between comments to eliminate
+                        margin white space -->
+                        <div class="area-1 bg-gray col-6 ">
+
+                            <!-- <div class="text-area-3 ">
+                      <span class="first " style="color: #0080bb; ">Ikuti Event </span>Secara <br /> Praktis dan Mudah
+                      <p>GSI Academy Events gives you opportunities to have more knowledge and perspective from live
+                            sessions as well as more networks</p>
+
+                      <button class="btn btn-primary button-mulai-sekarang ">MULAI KELAS SEKARANG</button>
+
+                  </div> -->
+
+                            <div class="row ">
+                                <div>
+                                    <!-- Text Container -->
+                                    <div class="text-container ">
+                                        <img src="https://academy.gsilab.id/img/faq.png " alt=" "
+                                            style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+
+                                        <!-- end of icons-container -->
+                                    </div>
+                                    <!-- end of text-container -->
+                                    <!-- end of text container -->
+
+                                </div>
+                                <!-- end of col -->
+                            </div>
+
+                        </div>
+                        <!-- end of area-2 -->
+                        <div class="area-2 col-5 ">
+                            <!-- <div class="container "> -->
+                            <div class="row ">
+                                <div id="accordion" class="accordion" style="width: 100%">
+                                    <h5 style="color: #F39501">Frequently Asked <span
+                                            style="color: black">Questions</span>
+                                    </h5>
+                                    <div class="card accordion-item">
+                                        <button class="card-header collapsed card-link"
+                                            style="text-align: left; border:none; "
+                                            data-toggle="collapse" data-target="#collapseOne">
+
+                                            <i class="fas fa-plus" style="color: #007bff;"></i>
+                                            Pertanyaan 1 </button>
+
+                                        <div id="collapseOne" class="collapse"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                GeeksforGeeks is a Computer Science portal for
+                                                geeks. It contains well written, well thought and
+                                                well explained computer science and programming
+                                                articles, quizzes etc.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="card-header collapsed card-link"
+                                            style="text-align: left; border:none;"
+                                            data-toggle="collapse" data-target="#collapseTwo">
+
+                                            <i class="fas fa-plus" style="color: #007bff;"></i>
+                                            Pertanyaan 2 </button>
+
+                                        <div id="collapseTwo" class="collapse"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                GeeksforGeeks is a Computer Science portal for
+                                                geeks. It contains well written, well thought and
+                                                well explained computer science and programming
+                                                articles, quizzes etc.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <button class="card-header collapsed card-link"
+                                            style="text-align: left; border:none;"
+                                            data-toggle="collapse" data-target="#collapseThree">
+
+                                            <i class="fas fa-plus" style="color: #007bff;"></i>
+                                            Pertanyaan 3 </button>
+
+                                        <div id="collapseThree" class="collapse"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                GeeksforGeeks is a Computer Science portal for
+                                                geeks. It contains well written, well thought and
+                                                well explained computer science and programming
+                                                articles, quizzes etc.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="card-header collapsed card-link"
+                                            style="text-align: left; border:none;"
+                                            data-toggle="collapse" data-target="#collapseThree">
+
+                                            <i class="fas fa-plus" style="color: #007bff;"></i>
+                                            Pertanyaan 4 </button>
+
+                                        <div id="collapseThree" class="collapse"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                GeeksforGeeks is a Computer Science portal for
+                                                geeks. It contains well written, well thought and
+                                                well explained computer science and programming
+                                                articles, quizzes etc.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <button class="card-header collapsed card-link"
+                                            style="text-align: left; border:none;"
+                                            data-toggle="collapse" data-target="#collapseThree">
+
+                                            <i class="fas fa-plus" style="color: #007bff;"></i>
+                                            Pertanyaan 5 </button>
+
+                                        <div id="collapseThree" class="collapse"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                GeeksforGeeks is a Computer Science portal for
+                                                geeks. It contains well written, well thought and
+                                                well explained computer science and programming
+                                                articles, quizzes etc.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="margin-top: -170px; ">
+
+                <t t-call="gsi_elearning.footer_elearning_website" />
+
+            </div>
+        </body>
+
+
+    </template>
+
+</odoo>

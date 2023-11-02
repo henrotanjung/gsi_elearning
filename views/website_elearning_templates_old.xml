@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <template id="elearning_website" name="Main Frontend Layout" inherit_id="website.layout">
+    <xpath expr="//head" position="before">
+      <t t-if="not title">
+        <t t-set="seo_object" t-value="seo_object or main_object" />
+      </t>
+    </xpath>
+
+    <!-- <xpath expr="//div[@id='wrapwrap']" position="replace">
+      <h1 style="color: red">hello world</h1>
+    </xpath> -->
+  </template>
+
+  <template id="elearning_template_header_default" name="Main Frontend Layout"
+    inherit_id="website.template_header_default">
+
+
+    <xpath expr="//div[@id='top_menu_collapse']" position="attributes">
+      <attribute name="class" add="test" separator=" " />
+      <attribute name="style" add="margin-left: 250px !important; margin-right: 100px;" />
+
+    </xpath>
+
+    <!-- <xpath expr="//ul[@id='top_menu/li']" position="attributes">
+      <attribute name="class" add="test" separator=" " />
+      <attribute name="style" add="margin-left: 250px !important; margin-right: 100px;" />
+      <attribute name="class" add="nav-item mx-2" />
+
+    </xpath> -->
+
+
+    <!-- <t t-call="portal.placeholder_user_sign_in">
+      <t t-set="_item_class" t-value="'nav-item'" />
+      <t t-set="_link_class" t-value="'nav-link'" />
+    </t> -->
+  </template>
+
+  <!-- <t t-call="gsi_elearning.navbar_nav"/> -->
+
+  <template id="elearning_footer" name="Footer Main Frontend Layout"
+    inherit_id="web.frontend_layout">
+    <xpath expr="//div[@id='footer']" position="replace">
+    
+      
+    </xpath>
+
+  </template>
+
+</odoo>

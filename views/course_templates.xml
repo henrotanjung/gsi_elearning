@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+  <!-- <template id="courseaa" name="Main Frontend Layout">
+    <t t-call="website.layout" />
+      
+  </template> -->
+
+  <template id="course_templates">
+    <title>Course</title>
+
+
+    <t t-call="gsi_elearning.head_elearning_website" />
+    <!-- <t t-call="portal.frontend_layout"></t> -->
+
+
+    <body data-spy="scroll" data-target=".fixed-top">
+
+      <!-- Navigation -->
+
+      <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+
+      <header id="header_course" class="header_course">
+        <div class="container ">
+          <div class="row">
+
+            <img src="https://academy.gsilab.id/img/circle_banner_course.png"
+              style="width: 300px; margin-top: 0px; margin-left: 759px;" alt="" />
+            <div class="col-lg-5">
+              <div class="text-container"
+                style="margin-left: 0px; margin-top: -290px; height: 150px;">
+                <h1 class="text-banner-course text-banner-abu" style="font-size: 38px"><span
+                    class="text-banner-blue">Ciptakan Keahlian</span> Baru Anda Bersama Kami</h1>
+                <p>GSI Academy is giving supports in sharing education, knowledge and information,.</p>
+
+                <div class="input-group ">
+                  <div>
+                    <input id="search-input " type="search " class="form-control "
+                      placeholder="Search" style="margin-top: 20px; width: 350px;" />
+                    <!-- <label class="form-label " for="form1 ">Search</label> -->
+                  </div>
+                  <button id="search-button " type="button " class="btn btn-primary"
+                    style="margin-top: 20px;">
+                    <i class="fas fa-search "></i>
+                  </button>
+                </div>
+                <!-- <a class="btn-solid-lg page-scroll " href="#about ">Discover</a>
+                        <a class="btn-outline-lg page-scroll " href="#contact "><i class="fas fa-user "></i>Contact Me</a> -->
+              </div>
+              <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
+      </header>
+
+
+      <div id="services " class="basic-2 basic-custom ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-12 mb-4 ">
+              <h2 class="h2-heading "><span style="color: #F39501 "> Alur Belajar </span> Kelas</h2>
+              <!-- <p class="p-heading ">Web design and development have been my bread and butter
+              for more than 5 years. During that time I've discovered that I can help startups and
+              companies with the following services</p> -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+          <div class="row ">
+            <div class="col-lg-4 text-center" style="width: 300px;">
+              <img src="https://academy.gsilab.id/img/alur_belajar_kelas1.png " alt=" "
+                style="background-size: cover;  border-top-left-radius: 10px; border-top-right-radius: 7px; " />
+              <p class="text-center mt-3">
+                <strong>Pilih Kelas </strong>
+              </p>
+
+              <!-- end of text-box -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-4 text-center ">
+              <img src="https://academy.gsilab.id/img/alur_belajar_kelas2.png " alt=" "
+                style="background-size: cover; border-top-left-radius: 10px; border-top-right-radius: 10px; width: 300px;" />
+              <p class="text-center mt-3">
+                <strong>Selesaikan Materi Kelas dan <br />Latihannya</strong>
+              </p>
+              <!-- end of text-box -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-4 text-center " style="width: 100px ">
+              <img src="https://academy.gsilab.id/img/alur_belajar_kelas3.png " alt=" "
+                style="background-size: cover; width: 300px; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+
+              <p class="text-center mt-3">
+                <strong>Dapatkan Sertifikat <br />Kelulusan Anda</strong>
+              </p>
+
+              <!-- end of text-box -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
+      </div>
+      <!-- </div> -->
+      <!-- end of split -->
+      <!-- end of details -->
+
+
+      <!-- Projects -->
+      <div class="container">
+        <div id="projects " class="basic-3" style="margin-top: -30px; ">
+          <div class="container " style="padding-top: 0px;">
+            <div class="row ">
+              <div class="col-lg-12 mt-3">
+                <h2 class="h2-heading "
+                  style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; ">Kelas
+                  Yang <span style="color: #0080bb; ">Banyak Diminati</span>
+
+                </h2>
+                <br />
+                <p class="text-center">
+
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">PGTA</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">Lifestyle
+                    Genomics</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">Laboratorium
+                    Umum</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">nipt</a>
+
+                </p>
+                <br />
+                <p class="text-center">
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">LSC</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">Webinar</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">LSC</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">Webinar</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">LSC</a>
+                  <a class="bg-gray " href="https://"
+                    style="margin-right: 50px; padding: 10px; border-radius: 10px;">Webinar</a>
+                </p>
+                <br />
+              </div>
+              <!-- end of col -->
+            </div>
+            <!-- end of row -->
+
+          </div>
+          <!-- end of container -->
+        </div>
+
+
+        <div id="services " class="basic-custom">
+          <div class="container ">
+            <div class="row ">
+              <t t-if="len(popular) >= 1">
+                <div style="width: 33%; border: 1px solid #cfd7de;">
+                  <t t-if="popular[0].image_1920">
+                    <img
+                      t-att-src="'data:image/png;base64,%s' % popular[0].image_1920.decode('utf-8')"
+                      alt=" "
+                      style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                  </t>
+                  <div class="text-box ">
+                    <!-- <i class="far fa-gem "></i> -->
+                    <div class="row ">
+                      <div class="col-9 ">
+                        <h5 class="mt-3 ">
+                          <t t-esc="popular[0].name" />
+                        </h5>
+
+
+                      </div>
+                      <div class="col-1 " style="text-align: right; ">
+                        <button class="btn btn-primary btn-sm mt-3 "
+                          style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                          <h6 class="text-lihat-detail " style="color: white; line-height: 120%; ">
+                            100%</h6>
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="https://academy.gsilab.id/img/star.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 4.5 / 5.0</span>
+                    </div>
+                    <div class="mt-1 ">
+                      <img src="https://academy.gsilab.id/img/stack.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 12 Materi</span>
+                    </div>
+                    <br />
+                    <p>
+                      <t t-esc="popular[0].description" />
+                    </p>
+                    <div class="row ">
+                      <div class="col-6 ">
+                        <del>
+                          <h6 style="color: red "> Rp. <t t-esc="popular[0].product_id.lst_price" />
+                          </h6>
+                        </del>
+                      </div>
+                      <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t
+                            t-esc="popular[0].product_id.lst_price - popular[0].product_id.lst_price" /></h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- <t t-esc="context.get('uid')"/> -->
+                    <a
+                      t-att-href="'/slides/' + popular[0].name.replace(' ', '-').lower() + '-' + str(popular[0].id)"
+                      class="btn btn-primary button-mulai-sekarang "
+                      style="width: 100%; border-radius: 10px; ">Lihat</a>
+                    <div style="height: 10px "></div>
+                  </div>
+                  <!-- end of text-box -->
+                </div>
+
+              </t>
+
+
+              <!-- end of col -->
+              <t t-if="len(popular) > 1">
+                <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                  <t t-if="popular[1].image_1920">
+                    <img
+                      t-att-src="'data:image/png;base64,%s' % popular[1].image_1920.decode('utf-8')"
+                      alt=" "
+                      style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                  </t>
+                  <div class="text-box ">
+                    <!-- <i class="far fa-gem "></i> -->
+                    <div class="row ">
+                      <div class="col-9 ">
+                        <h5 class="mt-3 ">
+                          <t t-esc="popular[1].name" />
+                        </h5>
+                      </div>
+                      <div class="col-1 " style="text-align: right; ">
+                        <button class="btn btn-primary btn-sm mt-3 "
+                          style="background-color: #F39501 ; height: 28px; border-radius: 10px; ">
+                          <h6 class="text-lihat-detail " style="color: white; line-height: 120%; ">
+                            50%</h6>
+                        </button>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="https://academy.gsilab.id/img/star.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 4.5 / 5.0</span>
+                    </div>
+                    <div class="mt-1 ">
+                      <img src="https://academy.gsilab.id/img/stack.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 12 Materi</span>
+                    </div>
+                    <br />
+                    <p>
+                      <t t-esc="popular[1].description" />
+                    </p>
+                    <div class="row ">
+                      <div class="col-6 ">
+                        <del>
+                          <h6 style="color: red "> Rp. <t t-esc="popular[1].product_id.lst_price" />
+                          </h6>
+                        </del>
+                      </div>
+                      <div class="col-6 " style="text-align: right; ">
+                        <h6>
+                          <t t-esc="popular[1].product_id.lst_price / 2" />
+                        </h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- <t t-set="url_detail" t-value="'/slides/pgta-enterprise-3-10'"/>
+                    <a t-att-href="url_detail"
+                      class="btn btn-primary button-mulai-sekarang "
+                      style="width: 100%; border-radius: 10px; ">Lihat</a> -->
+
+                    <t t-set="url_detail" t-value="'/slides/'" />
+                    <a
+                      t-att-href="'/slides/' + popular[1].name.replace(' ', '-').lower() + '-' + str(popular[1].id)"
+                      class="btn btn-primary button-mulai-sekarang "
+                      style="width: 100%; border-radius: 10px; ">Lihat</a>
+                    <div style="height: 10px "></div>
+                  </div>
+                  <!-- end of text-box -->
+                </div>
+              </t>
+
+              <!-- end of col -->
+              <t t-if="len(popular) > 2">
+                <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+                  <t t-if="popular[2].image_1920">
+                    <img
+                      t-att-src="'data:image/png;base64,%s' % popular[2].image_1920.decode('utf-8')"
+                      alt=" "
+                      style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                  </t>
+                  <!-- <img src="https://academy.gsilab.id/img/kelas_yg_diminita3.png " alt=" "
+                  style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius:
+                10px; " /> -->
+                  <div class="text-box ">
+                    <!-- <i class="far fa-gem "></i> -->
+                    <div class="row ">
+                      <div class="col-9 ">
+                        <h5 class="mt-3 ">
+                          <t t-esc="popular[2].name" />
+                        </h5>
+                      </div>
+                    </div>
+
+                    <div>
+                      <img src="https://academy.gsilab.id/img/star.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 4.5 / 5.0</span>
+                    </div>
+                    <div class="mt-1 ">
+                      <img src="https://academy.gsilab.id/img/stack.png " style="width: 20px; "
+                        alt=" " />
+                      <span class="star-text-normal "> 12 Materi</span>
+                    </div>
+                    <br />
+                    <p>
+                      <t t-esc="popular[2].description" />
+                    </p>
+                    <div class="row ">
+                      <div class="col-6 ">
+                        <del>
+                          <h6 style="color: red "> Rp. <t t-esc="popular[2].product_id.lst_price" />
+                          </h6>
+                        </del>
+                      </div>
+                      <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t t-esc="popular[2].product_id.lst_price - 20000 " /></h6>
+                      </div>
+                    </div>
+                    <hr />
+                    <a
+                      t-att-href="'/slides/' + popular[2].name.replace(' ', '-').lower() + '-' + str(popular[2].id)"
+                      class="btn btn-primary button-mulai-sekarang "
+                      style="width: 100%; border-radius: 10px; ">Lihat</a>
+                    <div style="height: 10px "></div>
+                  </div>
+                  <!-- end of text-box -->
+                </div>
+
+              </t>
+
+              <t t-if="len(popular) &lt; 2">
+                <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de;">
+                  
+                </div>
+              </t>
+              <t t-if="len(popular) &lt; 3">
+                <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de;">
+                  
+                </div>
+              </t>
+              <!-- end of col -->
+            </div>
+            <div class="row mt-4 ">
+              <div class="col-4 offset-4 mb-5 ">
+                <button class="btn btn-primary button-mulai-sekarang "
+                  style="width: 100%; border-radius: 10px; ">Lihat Selengkapnya</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="basic-custom">
+          <div class="container ">
+            <div class="text-center">
+              <div class="row">
+                <div style="width: 33%">
+                  <img src="https://academy.gsilab.id/img/mentor1.png" alt="" />
+                  <div class="text-box ">
+                    <div>
+                      <h5 class="mt-3 ">Name Mentor</h5>
+                      <p style="font-weight:normal">Job Mentor</p>
+                    </div>
+                  </div>
+                </div>
+                <div style="width: 33%; padding-top: 10%;">
+                  <img src="https://academy.gsilab.id/img/mentor2.png" alt="" />
+                  <div class="text-box ">
+                    <div>
+                      <h5 class="mt-3 ">Name Mentor</h5>
+                      <p style="font-weight:normal">Job Mentor</p>
+                    </div>
+                  </div>
+                </div>
+                <div style="width: 33%">
+                  <img src="https://academy.gsilab.id/img/mentor3.png" alt="" />
+                  <div class="text-box ">
+                    <h5 class="mt-3 ">Name Mentor</h5>
+                    <p style="font-weight:normal">Job Mentor</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row ">
+                <div>
+                  <!-- Text Container -->
+                  <div class="text-container ">
+                    <div>
+                      <img src="https://academy.gsilab.id/img/background_dibimbing.png " alt=" "
+                        style="background-size: cover; width: 1090px; margin-left: 0px; margin-top: -350px; position: relative; z-index: -1; max-height: 500px;" />
+                    </div>
+                    <div style="margin-top: -130px">
+                      <h2 class="h2-heading" style="position: relative">Dibimbing <span
+                          style="font-weight: 500; font-size: 30px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #F39501; ">Mentor
+                        Berpengalaman</span>
+                      </h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quod. Rem
+                        beatae nesciunt doloremque molestias dolore porro quas unde aspernatur!</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container" style="margin-top: 50px;">
+          <div class="row">
+            <h2
+              style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #0080bb; ">
+              Kelas <span style=" color: black; ">Kami</span>
+
+            </h2>
+            <div class="input-group ">
+              <div>
+                <input id="search-input-new " type="search " class="form-control "
+                  placeholder="Filter Course" style="margin-top: 15px; width: 1103px;" />
+                <!-- <img src="images/filter.png" style="width: 20px; margin-left: -70px;" alt=""> -->
+                <!-- <label class="form-label " for="form1 ">Search</label> -->
+              </div>
+              <button id="search-button " type="button " class="btn "
+                style="margin-top: 15px; margin-left: -90px;">
+                <!-- <i class="fas fa-search "></i> -->
+                <img src="https://academy.gsilab.id/img/filter.png"
+                  style="width: 20px; margin-left: 50px;" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container ">
+
+          <!-- Works -->
+          <div id="services " class="basic-custom mt-2 ">
+
+            <div class="row ">
+              <t t-set="index_course" t-value="0" />
+              <t t-foreach="all_courses" t-as="course">
+                <t t-if="index_course > 0">
+                  <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; ">
+
+                    <t t-if="course.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % course.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-3 ">
+                            <t t-esc="course.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar.png " style="width: 24px; " />
+                        <span class="star-text-normal ">10 Juli 2023</span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/maps.png " style="width: 24px; " />
+                        <span class="star-text-normal ">Indonesia International Institute for Life
+                          Sciences (i3L)</span>
+                      </div>
+                      <br />
+                      <p>
+                        <t t-esc="course.description" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="course.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t
+                          t-esc="course.product_id.lst_price" /></h6>
+                      </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + course.name.replace(' ', '-').lower() + '-' + str(course.id)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; ">Lihat</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-else="">
+                  <div style="width: 33%; border: 1px solid #cfd7de; ">
+
+                    <t t-if="course.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % course.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-3 ">
+                            <t t-esc="course.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar.png " style="width: 24px; " />
+                        <span class="star-text-normal ">10 Juli 2023</span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/maps.png " style="width: 24px; " />
+                        <span class="star-text-normal ">Indonesia International Institute for Life
+                          Sciences (i3L)</span>
+                      </div>
+                      <br />
+                      <p>
+                        <t t-esc="course.description" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="course.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                      <h6>Rp. <t
+                        t-esc="course.product_id.lst_price" /></h6>
+                    </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + course.name.replace(' ', '-').lower() + '-' + str(course.id)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; ">Lihat</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-set="index_course" t-value="index_course + 1" />
+              </t>
+            </div>
+            <!-- end of row -->
+          </div>
+          
+        </div>
+
+        <div class="split row mt-5 ">
+          <div class="container ">
+
+            <div class="area-1 bg-gray col-6 ">
+
+              <div class="row ">
+                <div>
+                  <!-- Text Container -->
+                  <div class="text-container ">
+                    <img src="https://academy.gsilab.id/img/faq.png " alt=" "
+                      style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+
+                    <!-- end of icons-container -->
+                  </div>
+                  <!-- end of text-container -->
+                  <!-- end of text container -->
+
+                </div>
+                <!-- end of col -->
+              </div>
+
+            </div>
+            <!-- end of area-2 -->
+            <div class="area-2 col-5 ">
+              <!-- <div class="container "> -->
+              <div class="row ">
+                <div id="accordion" class="accordion" style="width: 100%">
+                  <h5 style="color: #F39501">Frequently Asked <span style="color: black">Questions</span>
+                  </h5>
+                  <div class="card accordion-item">
+                    <button class="card-header collapsed card-link"
+                      style="text-align: left; border:none; " data-toggle="collapse"
+                      data-target="#collapseOne">
+
+                      <i class="fas fa-plus" style="color: #007bff;"></i> Pertanyaan 1 </button>
+
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        GeeksforGeeks is a Computer Science portal for geeks. It contains well
+                        written, well thought and well explained computer science and programming
+                        articles, quizzes etc.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <button class="card-header collapsed card-link"
+                      style="text-align: left; border:none;" data-toggle="collapse"
+                      data-target="#collapseTwo">
+
+                      <i class="fas fa-plus" style="color: #007bff;"></i> Pertanyaan 2 </button>
+
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        GeeksforGeeks is a Computer Science portal for geeks. It contains well
+                        written, well thought and well explained computer science and programming
+                        articles, quizzes etc.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <button class="card-header collapsed card-link"
+                      style="text-align: left; border:none;" data-toggle="collapse"
+                      data-target="#collapseThree">
+
+                      <i class="fas fa-plus" style="color: #007bff;"></i> Pertanyaan 3 </button>
+
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        GeeksforGeeks is a Computer Science portal for geeks. It contains well
+                        written, well thought and well explained computer science and programming
+                        articles, quizzes etc.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <button class="card-header collapsed card-link"
+                      style="text-align: left; border:none;" data-toggle="collapse"
+                      data-target="#collapseThree">
+
+                      <i class="fas fa-plus" style="color: #007bff;"></i> Pertanyaan 4 </button>
+
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        GeeksforGeeks is a Computer Science portal for geeks. It contains well
+                        written, well thought and well explained computer science and programming
+                        articles, quizzes etc.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <button class="card-header collapsed card-link"
+                      style="text-align: left; border:none;" data-toggle="collapse"
+                      data-target="#collapseThree">
+
+                      <i class="fas fa-plus" style="color: #007bff;"></i> Pertanyaan 5 </button>
+
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        GeeksforGeeks is a Computer Science portal for geeks. It contains well
+                        written, well thought and well explained computer science and programming
+                        articles, quizzes etc.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of col -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" style="margin-top: -170px; ">
+
+        <t t-call="gsi_elearning.footer_elearning_website" />
+
+      </div>
+    </body>
+
+
+  </template>
+
+</odoo>

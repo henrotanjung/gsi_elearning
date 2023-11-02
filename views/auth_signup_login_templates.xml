@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+  <template id="test_modif_form" name="Sign up - Reset Password">
+    <xpath expr="//form/hasclass('oe_signup_form')" position="attributes">
+      <attribute name="style" add="max-width: fit-content;" />
+    </xpath>
+  </template>
+
+  <template id="navbar_nav" name="Navbar Nav" inherit_id="website.navbar_nav">
+    <xpath expr="//ul[@id='top_menu']" position="replace">
+      <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+    </xpath>
+  </template>
+
+  <template id="auth_signup.fields" name="Sign up - Reset Password">
+    <!-- style="background-image: url('https://academy.gsilab.id/img/webinar.png');" -->
+
+
+    <div class="container-fluid mt-4" style="width: 1250px; margin-left: -520px">
+      <div class="container mt-4">
+        <!-- <div class="container-fluid mt-4"> -->
+        <div id="body_content_courses" class="test_color">
+          <div id="webinar_series" style="display: block">
+
+            <div class="card" style="background-color: green">
+              <div class="card-body" style="padding-bottom: 0px;">
+                <img src="https://academy.gsilab.id/img/stack.png"
+                  style="height: 100px;position: fixed;" />
+                <h2 class="card-title text-center"
+                  style=" height: 100px; font-family: 'Poppins'; font-style: normal; font-weight: 600; font-size: 32px; line-height: 130%;">
+                  <span style="color: #F39501">Register </span>your GSI <br />Academy <span
+                    style="color: #F39501">account</span>
+                </h2>
+
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="section_1">
+                <div class="container">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col col-1"></div>
+                      <div class="col col-10">
+
+                        <div class="form-group field-title">
+                          <div>
+                            <label style="font-weight: normal !important;" for="title">
+                              <strong>
+                                Title</strong>
+                            </label>
+                          </div>
+                          <select class="form-control form-select" name="title" id="title"
+                            aria-label="Default select example" style="max-width: 250px">
+                            <option selected="selected">Select your answer</option>
+                            <option value="1">Doctor</option>
+                            <option value="2">Madam</option>
+                            <option value="3">Miss</option>
+                            <option value="4">Mister</option>
+                          </select>
+                        </div>
+
+                        <div class="field-nik" id="field_nik" style="display: none">
+                          <label style="font-weight: normal !important;" for="nik">
+                            <strong> NIK - Identity Number </strong>
+                          </label>
+                          <input type="text" name="nik" t-att-value="nik" id="nik"
+                            class="form-group form-control"
+                            t-att-readonly="'readonly' if only_passwords else None"
+                            t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                            placeholder="NIK - Identity Number" />
+                        </div>
+
+                        <div class="form-group field-name">
+                          <label style="font-weight: normal !important;" for="name">
+                            <strong> Nama Lengkap - Full Name </strong>
+                          </label>
+
+                          <input type="text" name="name" t-att-value="name" id="name"
+                            class="form-control"
+                            required="required"
+                            t-att-readonly="'readonly' if only_passwords else None"
+                            t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                            placeholder="Nama Lengkap - Full Name " />
+                        </div>
+                        <div class="form-group field-email">
+                          <label style="font-weight: normal !important;" for="email">
+                            <strong> Alamat email
+                              - Email address </strong>
+                            <br />
+                            <span style="font-size: 12px;">Mohon pastikan
+                              tidak
+                              ada kesalahan
+                              penulisan email karena email akan digunakan untuk sarana komunikasi
+                              selanjutnya
+                              (termasuk Follow Up Email, dan Undangan) - Please make sure there are
+                              no
+                              mistakes or
+                              typos in writing the email because it will be used for further
+                              communication tools
+                              (including Follow Up Emails, and Invitations)</span>
+                          </label>
+                          <input type="text" name="login" t-att-value="login" id="login"
+                            class="form-control"
+                            required="required"
+                            t-att-readonly="'readonly' if only_passwords else None"
+                            t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                            placeholder="Alamat email - Email address" style="max-width: 450px" />
+                        </div>
+                        <div class="form-group field-instansi">
+                          <label style="font-weight: normal !important;" for="instansi">
+                            <strong>Instansi - Institution </strong>
+                          </label>
+
+                          <input type="text" name="instansi" t-att-value="instansi" id="instansi"
+                            class="form-control"
+                            required="required"
+                            t-att-readonly="'readonly' if only_passwords else None"
+                            t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                            placeholder="Instansi - Institution " style="max-width: 550px" />
+                        </div>
+
+                        <div class="form-group field-pekerjaan">
+                          <label style="font-weight: normal !important;">
+                            <strong>Pekerjaan - Job </strong>
+                          </label>
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pekerjaan"
+                              id="dokter_umum" value="dokter_umum" />
+                            <label style="font-weight: normal !important;" class="form-check-label"
+                              for="dokter_umum">
+                              Dokter Umum
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pekerjaan"
+                              id="dokter_spesialis" value="dokter_spesialis" />
+                            <label style="font-weight: normal !important;" class="form-check-label"
+                              for="dokter_spesialis">
+                              Dokter Spesialis
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pekerjaan" id="bidan"
+                              value="bidan" />
+                            <label style="font-weight: normal !important;" class="form-check-label"
+                              for="bidan">
+                              Bidan
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pekerjaan"
+                              id="tenaga_kesehatan_lainnya" value="tenaga_kesehatan_lainnya" />
+                            <label style="font-weight: normal !important;" class="form-check-label"
+                              for="tenaga_kesehatan_lainnya">
+                              Tenaga Kesehatan Lainnya
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pekerjaan"
+                              id="masyrakat_umum" value="masyrakat_umum" />
+                            <label style="font-weight: normal !important;" class="form-check-label"
+                              for="masyrakat_umum">
+                              Masyarakat Umum
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="form-group field-phone mt-2">
+                          <label style="font-weight: normal !important;" for="phone">
+                            <strong>No.
+                              Handphone
+                              - Phone number </strong>
+                          </label>
+
+                          <input type="text"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                            name="phone" t-att-value="phone" id="phone"
+                            class="form-control"
+                            placeholder="The value must be a number"
+                            required="required"
+                            style="max-width: 250px" />
+                        </div>
+
+                        <!-- <div class="form-group field-type_pendaftaran" >
+                          <label style="font-weight: normal !important;" for="type_pendaftaran">
+                            <strong>
+                              Jenis Pendaftaran - Register Classification </strong>
+                          </label>
+
+                          <select class="form-control form-select" name="type_pendaftaran" id="type_pendaftaran"
+                        aria-label="Default select example">
+                            <option selected="selected">Select your answer</option>
+                            <option value="sertifikat_skp_pogi">Sertifikat dengan SKP untuk Anggota
+                              POGI (Gratis) - Certificate with SKP for POGI members (Free)</option>
+                            <option value="sertifikat_skp_dokter_umum">Sertifikat dengan SKP untuk
+                              Dokter Umum dan Dokter Spesialis (Rp 110.000,-) - Certificate with SKP
+                              for General Practitioner (IDR 110.000,-)</option>
+                            <option value="sertifikat_tanpa_skp">Sertifikat tanpa SKP (Rp 55.000,-)
+                              -
+                              Certificate without SKP (IDR 55.000,-)</option>
+                            <option value="non_sertifikat">Non-Sertifikat (Gratis) - Non-Certificate
+                              (Free)</option>
+                          </select>
+                          
+                        </div> -->
+
+                        <div class="form-group field-notifikasi">
+                          <input type="checkbox" id="notifikasi" name="notifikasi"
+                            value="True" />
+                          <label class="ml-2" for="notifikasi"> Email notifikasi - Email
+                            notification</label>
+
+                          <p class="ml-2" style="font-size: 12px;">Apakah
+                            anda bersedia untuk menerima informasi terkait kegiatan kami selanjutnya
+                            melaui email?
+                            - Are you willing to be contacted for information regarding our next
+                            events via email? </p>
+
+                        </div>
+
+                        <div class="form-group field-name">
+                          <label style="font-weight: normal !important;" for="referensi">
+                            <strong> Referensi</strong>
+                          </label>
+
+                          <input type="text" name="referensi" t-att-value="Refrensi" id="referensi"
+                            class="form-control" placeholder="Referensi " style="max-width: 700px" />
+                        </div>
+
+                        <div class="form-group field-password pt-2">
+                          <label for="password">
+                            <strong>Password</strong>
+                          </label>
+                          <input type="password" name="password" id="password"
+                            class="form-control"
+                            required="required"
+                            placeholder="Password" style="max-width: 300px" />
+                        </div>
+
+                        <div class="form-group field-confirm_password">
+                          <label for="confirm_password">
+                            <strong>Confirm Password</strong>
+                          </label>
+                          <input type="password" name="confirm_password" id="confirm_password"
+                            class="form-control" required="required" placeholder="Confirm Password"
+                            style="max-width: 300px" />
+                        </div>
+
+
+                        <br />
+                      </div>
+                      <div class="col col-md-1"> </div>
+                    </div>
+                    <input type="hidden" name="redirect" t-att-value="redirect" />
+                    <input type="hidden" name="token" t-att-value="token" />
+                    <!-- <div class="text-center oe_login_buttons pt-3">
+                      <button type="submit" class="btn btn-primary btn-block"> Sign up</button>
+                      <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm"
+                        role="button">Already
+                        have an account?</a>
+                      <div class="o_login_auth" />
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </template>
+
+
+</odoo>

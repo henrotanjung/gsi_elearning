@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+  <!-- <template id="courseaa" name="Main Frontend Layout">
+    <t t-call="website.layout" />
+      
+  </template> -->
+
+  <template id="elearning_website_new">
+    <title>Home</title>
+
+
+    <t t-call="gsi_elearning.head_elearning_website" />
+
+
+    <body data-spy="scroll" data-target=".fixed-top">
+
+      <!-- Navigation -->
+      <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+
+      <header id="header" class="header">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-5">
+              <div class="text-container" style="margin-top: -200px;">
+                <h1 class="text-banner text-banner-abu" style="font-size: 42px">
+                  <span class="text-banner-blue">Experience
+                    The
+                    Future of Life,</span> Sciences with GSI Academy!</h1>
+                <p style="font-family: 'Poppins'; font-size: 19px; color: #7F7F7F">GSI Academy is giving supports in sharing education, knowledge
+                  and information,
+                  which is the basic and primary things to the development of
+                  research and life
+                  sciences. Together, we guide and lead people in achieving more
+                  knowledge
+                  and information especially in healthcare and life sciences.</p>
+                <button class="btn btn-primary button-mulai-sekarang mt-3" style="background-color:#0080BB; width: 295px; height: 54px; padding: 15px 60px 15px 62px; border-radius: 10px">LET'S EXPLORE</button>
+                <!-- <a class="btn-solid-lg page-scroll " href="#about
+                        ">Discover</a>
+                <a class="btn-outline-lg page-scroll " href="#contact "><i class="fas fa-user "></i>Contact Me</a> -->
+              </div>
+              <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+          </div>
+          <!-- end of row -->
+        </div>
+      </header>
+
+      <div id="programs " class="basic-2 basic-custom course_training_event mt-5">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-12 mb-4">
+              <h2 class="h2-heading " style="font-size: 44px">
+                <span style="color: #F39501 "> Our Popular </span> Programs</h2>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <t t-foreach="popular_programs" t-as="popular_program">
+              <div class="col-lg-4 ">
+
+                <div class="text-box " style="border-top-left-radius: 10px; border-top-right-radius: 10px">
+                  <t t-if="popular_program">
+                    <img
+                      t-att-src="'data:image/png;base64,%s' % popular_program.image_1920.decode('utf-8')"
+                      style="background-size: cover; width: 124%; border-top-left-radius: 10px; border-top-right-radius: 7px; margin-left: -34px; margin-top: -23px" />
+                    <h5 class="mt-5">
+                      <t t-esc="popular_program.name" />
+                    </h5>
+                    <p id="description">
+                      <t t-esc="popular_program.description_home_page" />
+                    </p>
+                  </t>
+                  <div class="col-5 offset-3 mb-5 " style="margin-top: 56px;">
+                    <button class="btn "
+                      style=" border: 1px solid #007bff; width: 100%; border-radius: 10px; font-family: 'Poppins'; font-weight: 700; font-size: 12px; letter-spacing: 0.2px; color: #0080BB; height: 44px; letter-spacing: 0.2px line-height: 24px">More
+                      ></button>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </div>
+        </div>
+      </div>
+
+      <div class="split row ">
+        <div class="container ">
+          <div class="area-1 col-6 ">
+            <div class="text-area-3 " style="font-size: 48px">
+              <span class="first ">Want to Learn Something? </span><span style="color: #486284; font-family: Poppins">Join The Courses!</span> <p style="font-family: Poppins; font-size: 19px; margin-top: 9px">GSI
+                Academy
+                Courses provides both Live and Self-Learning courses that provides
+                you with various
+                interesting things to be learnt.</p>
+
+              <button class="btn btn-primary button-mulai-sekarang " style="font-family: Poppins; font-weight: 600; border-radius: 10px; height: 54px; width: 304px">JOIN THE COURSE NOW</button>
+
+            </div>
+          </div>
+          <div class="area-2 col-5 ">
+            <div class="row ">
+              <div>
+                <div class="text-container ">
+                  <img src="https://academy.gsilab.id/img/area2New.png"
+                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-gray">
+
+        <div id="projects " class="basic-3 " style="margin-top: -100px;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-12 ">
+                <h2 class="h2-heading "
+                  style="font-weight: 500; font-size: 44px; line-height: 150%; font-family: 'Poppins'; font-style: normal;">Our
+                  <span style="color: #F39501; ">Courses</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="services " class="basic-custom course_training_event">
+          <div class="container ">
+            <div class="row ">
+              <t t-set="index_course" t-value="0" />
+              <t t-foreach="courses_home_page" t-as="course">
+                <t t-if="index_course > 0">
+                  <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; border-top-left-radius: 10px; border-top-right-raidus: 10px">
+
+                    <t t-if="course.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % course.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5">
+                            <t t-esc="course.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="course.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="course.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="course.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="course.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t
+                          t-esc="course.product_id.lst_price" /></h6>
+                      </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(course)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-else="">
+                  <div style="width: 33%; border: 1px solid #cfd7de;  border-top-left-radius: 10px; border-top-right-raidus: 10px">
+
+                    <t t-if="course.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % course.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5 ">
+                            <t t-esc="course.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="course.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="course.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="course.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="course.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                      <h6>Rp. <t
+                        t-esc="course.product_id.lst_price" /></h6>
+                    </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(course)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-set="index_course" t-value="index_course + 1" />
+              </t>
+            </div>
+            <div class="row mt-4">
+              <!-- <div class="col-4"></div> -->
+              <div class="col-4 offset-4 mb-5">
+                <button class="btn btn-primary button-mulai-sekarang"
+                  style="width: 100%; border-radius: 10px;">SEE MORE</button>
+              </div>
+              <!-- <div class="col-4"></div> -->
+
+            </div>
+            <!-- end of row -->
+            <!-- </div> -->
+            <!-- end of container -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="split row mt-5">
+        <div class="container ">
+          <div class="area-1 col-6 ">
+            <div class="row ">
+              <div>
+                <div class="text-container ">
+                  <img
+                    src="https://academy.gsilab.id/img/bergabung_dengan_kami.png"
+                    alt=" "
+                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area-2 col-5 ">
+            <div class="text-area-3 text-right"> Want to learn and Do Real Laboratory and Life
+              Science Practice? <span class="first">Join The
+                Training and Workshop!</span>
+                <p style="text-align: right; font-family: Poppins; font-weight: 400; margin-top: 10px">GSI Academy Training and Workshop
+                provides Offline and
+                Hands-on practices training that offers you a real hands-on
+                experience of a lot of
+                laboratories and life sciences field.
+                </p>
+
+                <button class="btn btn-primary button-mulai-sekarang float-right"
+                style="border-radius: 10px;">JOIN TRAINING NOW</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="training" class="basic-3 " style="margin-top: -100px;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-12 ">
+                <h2 class="h2-heading "
+                  style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #F39501;">
+                  Our <span style="color: black; ">Training &amp; Workshop</span>
+                </h2>
+              </div>
+            </div>
+
+          </div>
+          <!-- end of container -->
+        </div>
+
+
+        <!-- Works -->
+        <div id="services " class="basic-custom mt-2 course_training_event">
+          <div class="container ">
+            <div class="row ">
+              <t t-set="index_training" t-value="0" />
+              <t t-foreach="training_workshops" t-as="training">
+                <t t-if="index_training > 0">
+                  <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; border-top-left-radius: 10px; border-top-right-raidus: 10px">
+
+                    <t t-if="training.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % training.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5 ">
+                            <t t-esc="training.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="training.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="training.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="training.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="training.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t
+                          t-esc="training.product_id.lst_price" /></h6>
+                      </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(training)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-else="">
+                  <div style="width: 33%; border: 1px solid #cfd7de; border-top-left-radius: 10px; border-top-right-raidus: 10px ">
+
+                    <t t-if="training.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % training.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5 ">
+                            <t t-esc="training.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="training.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="training.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="training.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="training.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                      <h6>Rp. <t
+                        t-esc="training.product_id.lst_price" /></h6>
+                    </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(training)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-set="index_training" t-value="index_training + 1" />
+              </t>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-4 offset-4 mb-5">
+                <button class="btn btn-primary button-mulai-sekarang"
+                  style="width: 100%; border-radius: 10px;">SEE MORE</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="split row mt-5">
+        <div class="container ">
+          <div class="area-1 bg-gray col-6 ">
+            
+            <div class="text-area-3 ">
+              <div style="font-size: 44px; line-height: 1.1em">Want to involve in real live situation, get new knowledge and networks? <span class="first" style="color: #0080bb;">Join our Events!</span> </div>
+              <p style="margin-top: 30px; font-family: Poppins; font-size: 20px; color: #7F7F7F">GSI Academy Events gives you opportunities to have more knowledge and perspective from live sessions as well as more networks.</p>
+
+            <button
+                class="btn btn-primary button-mulai-sekarang ">JOINT OUR EVENTS</button>
+
+            </div>
+          </div>
+          <div class="area-2 col-5 ">
+            <div class="row ">
+              <div>
+                <div class="text-container ">
+                  <img
+                    src="https://academy.gsilab.id/img/ikuti_secara_praktis_dan_mudah.png "
+                    alt=" "
+                    style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container bg-gray">
+        <div id="events" class="basic-3 " style="margin-top: -100px;">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-12 ">
+                <h2 class="h2-heading "
+                  style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal;">
+                  Our <span style="color: #F39501;">Events</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="services " class="basic-custom course_training_event">
+          <div class="container ">
+            <div class="row ">
+              <t t-set="index_event" t-value="0" />
+              <t t-foreach="events" t-as="event">
+                <t t-if="index_event > 0">
+                  <div style="margin-left: 4px; width: 33%; border: 1px solid #cfd7de; border-top-left-radius: 10px; border-top-right-raidus: 10px ">
+
+                    <t t-if="event.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % event.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5 ">
+                            <t t-esc="event.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="event.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="event.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="event.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="event.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                        <h6>Rp. <t
+                          t-esc="event.product_id.lst_price" /></h6>
+                      </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(event)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-else="">
+                  <div style="width: 33%; border: 1px solid #cfd7de; ">
+
+                    <t t-if="event.image_1920">
+                      <img
+                        t-att-src="'data:image/png;base64,%s' % event.image_1920.decode('utf-8')"
+                        alt=" "
+                        style="background-size: cover; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; " />
+                    </t>
+                    <div class="text-box ">
+                      <!-- <i class="far fa-gem "></i> -->
+                      <div class="row ">
+                        <div class="col-9 ">
+                          <h5 class="mt-5 ">
+                            <t t-esc="event.name" />
+                          </h5>
+                        </div>
+                      </div>
+                      <div>
+                        <img src="https://academy.gsilab.id/img/calendar_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="event.date_course" /></span>
+                      </div>
+                      <div class="mt-2 ">
+                        <img src="https://academy.gsilab.id/img/map_figma.png " style="width: 24px; " />
+                        <span class="star-text-normal "><t t-esc="event.location" /></span>
+                      </div>
+                      <br />
+                      <p id="description">
+                        <t t-esc="event.description_home_page" />
+                      </p>
+                      <div class="row ">
+                        <div class="col-6 ">
+                          <h6>Rp. <t t-esc="event.product_id.lst_price" /></h6>
+                        </div>
+                        <!-- <div class="col-6 " style="text-align: right; ">
+                      <h6>Rp. <t
+                        t-esc="event.product_id.lst_price" /></h6>
+                    </div> -->
+                      </div>
+                      <hr />
+                      <a
+                        t-att-href="'/slides/' + slug(event)"
+                        class="btn btn-primary button-mulai-sekarang "
+                        style="width: 100%; border-radius: 10px; " id="detail">Find out more</a>
+                      <div style="height: 10px; "></div>
+                    </div>
+                  </div>
+                </t>
+                <t t-set="index_event" t-value="index_event + 1" />
+              </t>
+            </div>
+            <div class="row mt-4">
+              <div class="col-4 offset-4 mb-5">
+                <button class="btn btn-primary button-mulai-sekarang"
+                  style="width: 100%; border-radius: 10px;" >SEE MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Testimonial  -->
+      <div class="cards-1 ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-12 ">
+              <h2 class="h2-heading " style="width:100%"><span style="color: #0080BB ">TESTIMONY</span> FROM OUR PARTICIPANTS</h2>
+              <p class="p-heading testimony" style="margin-top: -30px;">Go through what our past participants have said about GSI Academy programs and join them in learning with GSI Academy</p>
+            </div>
+          </div>
+          <div class="row mt-5 ">
+            <div class="col-lg-12 " style="font-family: Rubik!important">
+              <div class="card " style="width: 30%;">
+                <div class="card-body ">
+
+                  <div class="details ">
+                    <!-- <img
+                      src="https://academy.gsilab.id/img/testimonial-1notfound.jpg "
+                      alt="M" /> -->
+                    <span class="circle mr-3 mb-3" style="font-family: Poppins; font-weight: bold; color: white">M</span>
+                    
+                    <div class="text ">
+                      <div class="testimonial-author ">Mario Donald Bani</div>
+                      <div class="occupation ">Jakarta, Indonesia</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text " style="background-color: #f8fbfe">"I genuinely enjoyed the hands on experience conducted through the session. However, it would be great if the material can also include what 16S sequence is, why is it targeted, and what the level of conservation of this sequence in bacterial kingdom."</p>
+                  <p class="testimonial-text " style="background-color: #f8fbfe">Testimony from "Training Series: 16s Bacterial Sequencing using ONT"</p>
+                </div>
+              </div>
+              <div class="card " style="width: 30%;">
+                <div class="card-body ">
+
+                  <div class="details ">
+                    <span class="circle mr-3 mb-3" style="font-family: Poppins; font-weight: bold; color: white">N</span>
+                    <div class="text ">
+                      <div class="testimonial-author ">Dr. Nova Dilla Yanthi, M.Si</div>
+                      <div class="occupation ">Jakarta, Indonesia</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text " style="background-color: #fff8f2">"GSI memberikan peluang dengan memfasilitasi kesempatan belajar lebih banyak mengenai 16S Bacterial Sequencing dengan ONT"</p>
+                  <p class="testimonial-text " style="background-color: #fff8f2">testimony from "Training Series: 16s Bacterial Sequencing using ONT"</p>
+                </div>
+              </div>
+              <div class="card " style="width: 30%;">
+                <div class="card-body ">
+
+                  <div class="details ">
+                    <span class="circle mr-3 mb-3" style="font-family: Poppins; font-weight: bold; color: white">N</span>
+                    <div class="text ">
+                      <div class="testimonial-author ">Nurul Setia Rahayu, M.Si</div>
+                      <div class="occupation ">Jakarta, Indonesia</div>
+                    </div>
+                    <!-- end of text -->
+                  </div>
+                  <!-- end of testimonial-details -->
+                  <p class="testimonial-text " style="background-color: #f8fbfe">"Acara yang diadakan sudah sangat baik...terima kasih untuk para narasumber atas sharing ilmu nya..."</p>
+                  <p class="testimonial-text " style="background-color: #f8fbfe">testimony from "Training Series: ONT Post-NGS Workflow &amp; Analysis"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div id="jadwal" class="basic-3">
+          <div class="container ">
+            <div class="row ">
+              <div class="col-lg-12 ">
+                <h2 class="h2-heading "
+                  style="font-weight: 500; font-size: 38px; line-height: 150%; font-family: 'Poppins'; font-style: normal; color: #F39501;">
+                  Our <span style="color: black; ">Schedule</span>
+                </h2>
+                <p class="p-heading " style="font-family: Poppins; letter-spacing: 0.2px; font-weight: 400 text-align: center">See our schedules for the year and choose the ones 
+                  that suit your availability</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="services " class="basic-custom ">
+          <div class="container ">
+            <div class="row ">
+              <div class="col-lg-5 ">
+                <div id="demo-calendar-basic"></div>
+              </div>
+              <div class="col col-lg-7 ">
+                <div class="row " style="background-color: #f8fbfe; ">
+                  <div class="col col-2 " style="position: relative; ">
+                    <div
+                      style="position: absolute; width: 50px; height: 50px; background-color: #f39501; border-radius: 50px; top: 20% ">
+                      <div class="child text-center "
+                        style="position: absolute; top: 20%; color: white; position: relative; ">
+                        <span>02</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col col-8 jadwal"> ONT Training and Work... <p>Genomics Hub</p>
+                  </div>
+                  <div class="col col-2 mt-2 ">
+                    <span style="color:#0080bb "> 14.00 PM </span>
+                  </div>
+                </div>
+                <div class="row mt-2 " style="background-color: #f8fbfe; ">
+                  <div class="col col-2 " style="position: relative; ">
+                    <div
+                      style="position: absolute; width: 50px; height: 50px; background-color: #f39501; border-radius: 50px; top: 20% ">
+                      <div class="child text-center "
+                        style="position: absolute; top: 20%; color: white; position: relative; ">
+                        <span>02</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col col-8 jadwal"> ONT Training and Work... <p>Genomics Hub</p>
+                  </div>
+                  <div class="col col-2 mt-2 ">
+                    <span style="color:#0080bb "> 14.00 PM </span>
+                  </div>
+                </div>
+                <div class="row mt-2 " style="background-color: #f8fbfe; ">
+                  <div class="col col-2 " style="position: relative; ">
+                    <div
+                      style="position: absolute; width: 50px; height: 50px; background-color: #f39501; border-radius: 50px; top: 20% ">
+                      <div class="child text-center "
+                        style="position: absolute; top: 20%; color: white; position: relative; ">
+                        <span>02</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col col-8 jadwal"> Training Series: ONT Post... <p>Genomics Hub</p>
+                  </div>
+                  <div class="col col-2 mt-2 ">
+                    <span style="color:#0080bb "> 14.00 PM </span>
+                  </div>
+                </div>
+
+                <div class="row mt-4 ">
+                  <div class="col-4 offset-4 mb-5 ">
+                    <button class="btn "
+                      style=" border: 1px solid #007bff; width: 100%; border-radius: 10px; font-family: 'Poppins'; font-weight: 700; font-size: 14px; letter-spacing: 0.2px; color: #0080BB; ">More
+                      ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="split row want_top_apart" style="margin-top: 57px">
+        <div class="container ">
+
+          <!-- end of area-2 -->
+          <div class="col-12 ">
+            <!-- <div class="container "> -->
+            <div
+              style="background-image: url('https://academy.gsilab.id/img/ingin_menjadi_bagian_kami.png'); background-size: cover; height: 52%; width: 100%;">
+              <div class="container">
+                <div class="row ">
+
+                  <div class="col-lg-10 text-center offset-md-1 mb-5"
+                    style="margin-top: 400px; margin-left: 53px">
+                    <div class="text-container" style="width: auto">
+                      <h1 class="text-banner text-banner-abu"
+                        style="font-size: 34px; width: auto">Want To Be Part Of
+                        <br />
+                        <span style="color: #0080bb;"> GSI Academy? </span>  </h1>
+                      <p style="margin-top: -90px; font-family: Poppins; font-size: 19px; letter-spacing: 0.2px">Join us as facilitators and trainers or partners in contributing and sharing knowledge for the society</p>
+
+                      <button
+                        class="btn btn-primary button-mulai-sekarang mt-4">Join as GSI Academy partner</button>
+                    </div>
+                    <!-- end of text-container -->
+                  </div>
+                  <!-- end of col -->
+                </div>
+                <!-- end of row -->
+              </div>
+
+              
+
+            </div>
+            <div style="height: 232px; background-color: #fff8f2"></div>
+            <!-- end of col -->
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- end of copyright -->
+      <!-- end of copyright -->
+
+      <div class="container-fluid" style="margin-top: -221.1px; ">
+
+        <t t-call="gsi_elearning.footer_elearning_website" />
+
+      </div>
+
+
+      <script>
+        $(document).ready(function() {
+        $("#demo-calendar-basic ").zabuto_calendar();
+        });
+
+        $("#demo-calendar-basic ").zabuto_calendar({
+        classname: 'table table-bordered lightgrey-weekends'
+        });
+      </script>
+
+    </body>
+
+
+  </template>
+
+</odoo>

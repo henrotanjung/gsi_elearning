@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+
+    <template id="footer_elearning_website">
+
+        <div class="footer"
+            style="background-color: #76b6e2; margin-left: -15px; margin-right: -15px;">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col col-2 ">
+                        <img
+                            src="https://academy.gsilab.id/img/logo.png "
+                            style=" width: 170px; background-size: cover; margin-top: -20px; "
+                            alt="alternative" />
+                    </div>
+                    <div class="col col-3 text-left ml-5 "
+                        style="margin-top: -30px; color: white; ">
+                        <p style="margin-top: 10px; color: white;">
+                            <a style="color : white; font-weight: bold;"
+                                href="https://www.w3schools.com ">
+                                Menu</a>
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">
+                                Course and Workshop</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">
+                                Research</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">
+                                Blog</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">
+                                Event</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">
+                                About</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">Privacy Policy</a>
+                        </p>
+                        <p style="margin-top: -10px; color: white; ">
+                            <a style="color : white "
+                                href="https://www.w3schools.com ">Terms
+                                &amp; Conditions</a>
+                        </p>
+                    </div>
+                    <div class="col col-3 text-left ml-5 "
+                        style="margin-top: -30px; color: white; font-weight: bold;">Office<p
+                            style="margin-top: 10px; color: white; ">Monday - Friday</p>
+                                <p
+                            style="margin-top: -10px; color: white; ">08.30
+                            - 17.30</p>
+                                <p style="margin-top: 10px; color: white; ">Location</p>
+                                <p
+                            style="margin-top: -10px; color: white; ">Genomic
+                            Hub </p>
+                                <p style="margin-top: -20px; color: white; ">Jl.
+                            Sultan Agung No.
+                            29, </p>
+                                <p style="margin-top: -20px; color: white; ">Guntur,
+                            Setiabudi,</p>
+                                <p style="margin-top: -20px; color: white; ">Jakarta
+                        Selatan, DKI
+                            Jakarta 12980</p>
+                                <p
+                            style="margin-top: 10px; color: white; font-weight: bold">Get in Touch</p>
+                                <div
+                            class="row">
+                            <div class="col-1">
+                                <a href="#your-link ">
+                                    <img src="https://academy.gsilab.id/img/email.png " style="width: 24px; " />
+                                </a>
+                            </div>
+                            <div class="col-6"> GSIAcademy@gsilab.id</div>
+
+                        </div>
+                                <div
+                            class="row">
+                            <div class="col-1">
+                                <a href="https://wa.me/081119230640">
+                                    <img src="https://academy.gsilab.id/img/wa_icon.png " style="width: 24px; " />
+                                </a>
+                            </div>
+                            <div class="col-6">081119230640</div>
+
+                        </div>
+
+                    </div>
+                    <div class="col col-3 text-left "
+                        style="margin-top: -30px; color: white; font-weight: bold;">Follow for More <div
+                            class="social-container ">
+                            <span class="fa-stack "
+                                style="font-size: 1.0rem; ">
+                                <a href="https://www.instagram.com/gsilab.id/">
+                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+
+                                </a>
+                            </span>
+                            <span class="fa-stack "
+                                style="font-size: 1.0rem; ">
+                                <a href="https://www.facebook.com/GSILAB.ID/">
+                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                            <span class="fa-stack "
+                                style="font-size: 1.0rem; ">
+                                <a href="#your-link ">
+                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                            <span class="fa-stack "
+                                style="font-size: 1.0rem; ">
+                                <a href="https://id.linkedin.com/company/gsi-lab">
+                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- <script>
+
+            function checkUrl () {
+            let url = window.location.href;
+            if (url.includes('web/login')) {
+                    let loginEl = document.getElementsByClassName("login");
+                    let signupEl = document.getElementsByClassName("signup");
+                    loginEl[0].style.color = "#0080BB";
+                    signupEl[0].style.color = "#cdd5d8";
+            
+                    }
+            else if (url.includes('web/signup')) {
+                let loginEl = document.getElementsByClassName("login");
+                let signupEl = document.getElementsByClassName("signup");
+                loginEl[0].style.color = "#cdd5d8";
+                signupEl[0].style.color = "#0080BB";
+            
+                    }
+                }
+
+            checkUrl();
+        </script> -->
+    </template>
+
+    <template id="footer_elearning_website_detail">
+
+
+
+        <div class="footer"
+
+            style="background-color: #76b6e2; margin-left: -15px; margin-right: -15px;">
+
+            <div class="container-fluid" style="padding-top: 50px">
+
+                <div class="row ">
+
+                    <div class="col col-2 ">
+
+                        <img
+
+                            src="https://academy.gsilab.id/img/logo.png "
+
+                            style=" width: 170px; background-size: cover; margin-top: -20px; "
+
+                            alt="alternative" />
+
+                    </div>
+
+                    <div class="col col-3 text-left ml-5 "
+
+                        style="margin-top: -30px; color: white; ">
+
+                        <p style="margin-top: 10px; color: white;">
+
+                            <a style="color : white; font-weight: bold;"
+
+                                href="https://www.w3schools.com ">
+
+                                Menu</a>
+
+                        </p>
+
+
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">
+
+                                Course and Workshop</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">
+
+                                Research</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">
+
+                                Blog</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">
+
+                                Event</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">
+
+                                About</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">Privacy Policy</a>
+
+                        </p>
+
+                        <p style="margin-top: -10px; color: white; ">
+
+                            <a style="color : white "
+
+                                href="https://www.w3schools.com ">Terms
+
+                                &amp; Conditions</a>
+
+                        </p>
+
+                    </div>
+
+                    <div class="col col-3 text-left ml-5 "
+
+                        style="margin-top: -30px; color: white; font-weight: bold;">Office<p
+
+                            style="margin-top: 10px; color: white; ">Monday - Friday</p>
+
+                                <p
+
+                            style="margin-top: -10px; color: white; ">08.30
+
+                            - 17.30</p>
+
+                                <p style="margin-top: 10px; color: white; ">Location</p>
+
+                                <p
+
+                            style="margin-top: -10px; color: white; ">Genomic
+
+                            Hub </p>
+
+                                <p style="margin-top: -20px; color: white; ">Jl.
+
+                            Sultan Agung No.
+
+                            29, </p>
+
+                                <p style="margin-top: -20px; color: white; ">Guntur,
+
+                            Setiabudi,</p>
+
+                                <p style="margin-top: -20px; color: white; ">Jakarta
+
+                        Selatan, DKI
+
+                            Jakarta 12980</p>
+
+                                <p
+
+                            style="margin-top: 10px; color: white; font-weight: bold">Get in Touch</p>
+
+                                <div
+
+                            class="row">
+
+                            <div class="col-1">
+
+                                <a href="#your-link ">
+
+                                    <img src="https://academy.gsilab.id/img/email.png " style="width: 24px; " />
+
+                                </a>
+
+                            </div>
+
+                            <div class="col-6"> GSIAcademy@gsilab.id</div>
+
+
+
+                        </div>
+
+                                <div
+
+                            class="row">
+
+                            <div class="col-1">
+
+                                <a href="https://wa.me/081119230640">
+
+                                    <img src="https://academy.gsilab.id/img/wa_icon.png " style="width: 24px; " />
+
+                                </a>
+
+                            </div>
+
+                            <div class="col-6">081119230640</div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col col-3 text-left "
+
+                        style="margin-top: -30px; color: white; font-weight: bold;">Follow for More <div
+
+                            class="social-container ">
+
+                            <span class="fa-stack "
+
+                                style="font-size: 1.0rem; ">
+
+                                <a href="https://www.instagram.com/gsilab.id/">
+
+                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+
+
+
+                                </a>
+
+                            </span>
+
+                            <span class="fa-stack "
+
+                                style="font-size: 1.0rem; ">
+
+                                <a href="https://www.facebook.com/GSILAB.ID/">
+
+                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+
+                                </a>
+
+                            </span>
+
+                            <span class="fa-stack "
+
+                                style="font-size: 1.0rem; ">
+
+                                <a href="#your-link ">
+
+                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+
+                                </a>
+
+                            </span>
+
+                            <span class="fa-stack "
+
+                                style="font-size: 1.0rem; ">
+
+                                <a href="https://id.linkedin.com/company/gsi-lab">
+
+                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+
+                                </a>
+
+                            </span>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </template>
+
+
+
+</odoo>

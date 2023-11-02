@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+
+    <template id="about_elearning_template">
+        <title>About Us</title>
+
+
+        <t t-call="gsi_elearning.head_elearning_website" />
+
+
+        <body data-spy="scroll" data-target=".fixed-top">
+
+            <!-- Navigation -->
+            <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+
+            <!-- Header -->
+            <header id="header_about" class="header_about">
+                <div class="container ">
+                    <div class="row">
+
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="row d-flex justify-content-center" style="margin-top: 70px">
+
+                <div class="card" style="width: 77rem;">
+                    <div class="card-body" style="padding: 70px">
+                        <div class="details ">
+
+                            <div class="text text-center">
+                                <div class="testimonial-author " style="font-size: 38px;">Lorem Isum <span
+                                        style="color: #F39501;">dolor sit amet</span></div>
+                                <!-- <div class="occupation ">Team Leader - Syncnow</div> -->
+                            </div>
+                            <!-- end of text -->
+                            <br />
+                            <div class="row">
+
+                                <div class="col-1">
+                                    <img style="border-radius: 50px;" src="https://academy.gsilab.id/img/about_image.jpeg "
+                                        alt="alternative"/>
+                                </div>
+                                <div class="col-5">
+                                    <h5 class="card-title">Name</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Penulis</h6>
+                                </div>
+                            </div>
+                            <br />
+
+                        </div>
+
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Atque sed consequatur tempora? Deserunt explicabo quo est atque
+                            exercitationem consequuntur aperiam asperiores ut, repellendus, vitae
+                            iure? Animi libero, aperiam laborum doloribus aspernatur pariatur veniam
+                            exercitationem possimus, facere autem nobis eum quos eveniet assumenda
+                            laboriosam. Animi sunt facere totam aut recusandae deleniti eveniet vero
+                            dolore deserunt! Assumenda vitae sapiente quo dicta. Unde laborum
+                            repellendus perspiciatis consequuntur, eum nemo, alias, officiis
+                            veritatis impedit dignissimos voluptas vel. Ipsum minus vero dolore
+                            optio repudiandae ratione ducimus voluptate dolorum. Eaque impedit
+                            dignissimos quia ea sapiente saepe aperiam perferendis reiciendis nobis
+                            consequuntur necessitatibus, tempore, excepturi, tenetur a harum
+                            voluptates nemo ipsa magnam commodi modi! Blanditiis et culpa minima
+                            sequi dolorem eveniet fugiat facilis iure quam molestiae cumque velit,
+                            nam dolor doloribus quidem distinctio impedit ex, laboriosam aut
+                            quaerat! Totam enim corrupti doloremque! Inventore tempore esse
+                            asperiores iste incidunt velit commodi maiores nemo sit dolores
+                            consectetur laborum, eligendi ipsa neque vitae repellat excepturi. Est
+                            dolores, ipsa blanditiis, veniam incidunt optio harum non eaque maxime
+                            sunt, dolorem cupiditate porro temporibus doloremque iure quibusdam cum.
+                            Natus mollitia, obcaecati maxime dignissimos eius eveniet accusantium
+                            vitae porro ut, fuga labore nihil fugiat. Animi minima saepe impedit
+                            quidem facere culpa magni cumque iusto!</p>
+
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Atque sed consequatur tempora? Deserunt explicabo quo est atque
+                            exercitationem consequuntur aperiam asperiores ut, repellendus, vitae
+                            iure? Animi libero, aperiam laborum doloribus aspernatur pariatur veniam
+                            exercitationem possimus, facere autem nobis eum quos eveniet assumenda
+                            laboriosam. Animi sunt facere totam aut recusandae deleniti eveniet vero
+                            dolore deserunt! Assumenda vitae sapiente quo dicta. Unde laborum
+                            repellendus perspiciatis consequuntur, eum nemo, alias, officiis
+                            veritatis impedit dignissimos voluptas vel. </p>
+
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Atque sed consequatur tempora? Deserunt explicabo quo est atque
+                            exercitationem consequuntur aperiam asperiores ut, repellendus, vitae
+                            iure? Animi libero, aperiam laborum doloribus aspernatur pariatur veniam
+                            exercitationem possimus, facere autem nobis eum quos eveniet assumenda
+                            laboriosam. Animi sunt facere totam aut recusandae deleniti eveniet vero
+                            dolore deserunt! Assumenda vitae sapiente quo dicta. Unde laborum
+                            repellendus perspiciatis consequuntur, eum nemo, alias, officiis
+                            veritatis impedit dignissimos voluptas vel. Ipsum minus vero dolore
+                            optio repudiandae ratione ducimus voluptate dolorum. Eaque impedit
+                            dignissimos quia ea sapiente saepe aperiam perferendis reiciendis nobis
+                            consequuntur necessitatibus, tempore, excepturi, tenetur a harum
+                            voluptates nemo ipsa magnam commodi modi! Blanditiis et culpa minima
+                            sequi dolorem eveniet fugiat facilis iure quam molestiae cumque velit,
+                            nam dolor doloribus quidem distinctio impedit ex, laboriosam aut
+                            quaerat! Totam enim corrupti doloremque! Inventore tempore esse
+                            asperiores iste incidunt velit commodi maiores nemo sit dolores
+                            consectetur laborum, eligendi ipsa neque vitae repellat excepturi. Est
+                            dolores, ipsa blanditiis, veniam incidunt optio harum non eaque maxime
+                            sunt, dolorem cupiditate porro temporibus doloremque iure quibusdam cum.
+                            Natus mollitia, obcaecati maxime dignissimos eius eveniet accusantium
+                            vitae porro ut, fuga labore nihil fugiat. Animi minima saepe impedit
+                            quidem facere culpa magni cumque iusto!</p>
+
+                        <a href="#" class="card-link">Hyperlink</a>
+                        <a href="#" class="card-link">Hyperlink</a>
+                        <a href="#" class="card-link">Hyperlink</a>
+                        <a href="#" class="card-link">Hyperlink</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <t t-call="gsi_elearning.footer_elearning_website" />
+
+
+        </body>
+
+
+    </template>
+
+</odoo>

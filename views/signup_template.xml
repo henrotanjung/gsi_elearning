@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <template id="courseaa" name="Main Frontend Layout">
+    <t t-call="website.layout" />
+      
+  </template> -->
+    <template id="auth_signup_fields" name="Auth Signup/ResetPassword form fields">
+        <div class="form-outline mb-2">
+            <label class="form-label" for="title"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Title</label>
+            <select class="form-control form-control-lg form-select" name="title_field" id="title_field"
+                aria-label="Default select example"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;">
+                <option value="3">Mr.</option>
+                <option value="7">Mrs.</option>
+                <option value="6">Ms</option>
+            </select>
+        </div>
+        <div class="form-outline mb-2" style="margin-bottom: 30px!important">
+            <label class="form-label" for="name"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">Nama
+                lengkap</label>
+            <input type="text" name="name" t-att-value="name" id="name"
+                class="form-control form-control-lg"
+                required="required"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                t-att-readonly="'readonly' if only_passwords else None"
+                t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                placeholder="Nama lengkap" />
+                <div class="alert alert-warning" id="alert_nama" style="display: none; text-align: center">
+                    Nama is required
+                </div>
+                <span style="font-size: 12px; margin-left: -25px">* Nama lengkap beserta gelar (mohon pastikan tidak ada kesalahan penulisan karena nama</span> <br/><span style="font-size: 12px; float: left">akan dicantumkan pada sertifikat)</span>
+            
+        </div>
+        <div class="form-outline mb-2">
+            <label class="form-label" for="instansi"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Instansi</label>
+            <input type="text" name="instansi" t-att-value="instansi" id="instansi"
+                class="form-control form-control-lg"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                placeholder="Instansi" />
+        </div>
+        <div class="form-group field-pekerjaan">
+            <label class="form-label" for="instansi"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Pekerjaan</label>
+            <select onchange="onchangePekerjaan()" class="form-control form-control-lg form-select"
+                name="pekerjaan" id="pekerjaan" aria-label="Default select example"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;">
+                <option value="" >Pilih pekerjaan</option>
+                <option value="dokter">Dokter / Tenaga kesehatan</option>
+                <option value="pelajar">Pelajar / Mahasiswa</option>
+                <option value="dosen_pengajar">Dosen / Pengajar</option>
+                <option value="staf_lab">Staf laboratorium</option>
+                <option value="peneliti">Peneliti</option>
+                <option value="pekerjaan_lainnya">Lainnya</option>
+            </select>
+            <input type="text" id="pekerjaan_lainnya" name="pekerjaan_lainnya"
+                class="form-control form-control-lg mt-2"
+                style="height: 60px; width: 600px; background-color: #f5f6f8; display:none"
+                placeholder="Pekerjaan lainnya" />
+        </div>
+        <div class="form-outline mb-2">            
+            <label class="form-label" for="phone"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">No.
+                Hp</label>
+            <input type="text" id="phone" name="phone" t-att-value="phone"
+                class="form-control form-control-lg"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                placeholder="No. Hp" />
+            <div class="alert alert-warning" id="alert_hp" style="display: none;">
+                Hp is required
+            </div>
+        </div>
+        <div class="form-outline mb-2">
+            <label class="form-label" for="email"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Email</label>
+            <input type="email" id="login" name="login" t-att-value="login"
+                class="form-control form-control-lg" required="required"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                placeholder="Email" />
+                <div class="alert alert-warning" id="alert_email" style="display: none;">
+                    Email is required
+                </div>
+        </div>
+        <div class="form-outline mb-2">
+            <label class="form-label" for="referensi"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Referensi</label>
+            
+            <select onchange="onchangeReff()" class="form-control form-control-lg form-select"
+                name="referensi" id="referensi"
+                aria-label="Default select example"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;">
+                <option value="">Pilih referensi</option>
+                <option value="ig_gsilab">Instagram @gsilab.id</option>
+                <option value="ig_tanyadna">Instagram @tanyadna.id</option>
+                <option value="linkedin_gsilab">LinkedIn GSI Lab</option>
+                <option value="tiktok">Tiktok</option>
+                <option value="facebook">Facebook</option>
+                <option value="broadcast_wa">Broadcast Whatsapp</option>
+                <option value="telegram">Telegram</option>
+                <option value="referensi_lainnya">Lainnya</option>
+            </select>
+            <input type="text" id="referensi_lainnya" name="referensi_lainnya"
+                class="form-control form-control-lg mt-2"
+                style="height: 60px; width: 600px; background-color: #f5f6f8; display:none"
+                placeholder="Referensi lainnya" />
+                <span style="font-size: 12px; margin-left: -270px">* dari mana Anda mengetahui tentang GSI Academy?</span> 
+        </div>
+        <div class="form-outline mb-2">
+            <label class="form-label" for="password"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">
+                Password</label>
+            <input type="password" id="password" name="password"
+                class="form-control form-control-lg"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                placeholder="Password" />
+        </div>
+        <div class="form-outline mb-2">
+            <label class="form-label" for="konfirmasi_password"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">Konfirmasi
+                password</label>
+            <input type="password" id="confirm_password" name="confirm_password"
+                class="form-control form-control-lg"
+                style="height: 60px; width: 600px; background-color: #f5f6f8;"
+                placeholder="Konfirmasi password" />
+        </div>
+        <br />
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-start">
+            <label class="form-label" for="notifikasi"
+                style="font-weight: bold; float: left; font-family: Poppins; font-size: 20px; line-height: 30px; color: #2e353a;">Email
+                notifikasi </label>
+            <input class="form-check-input" type="checkbox" id="notifikasi" name="notifikasi" />
+        </div>
+        <p>Apakah anda bersedia untuk menerima informasi terkait
+            kegiatan kami selanjutnya melalui email?</p>
+        <br />
+    </template>
+    <template id="signup_templates">
+        <title>Sign up</title>
+        <t t-call="gsi_elearning.head_elearning_website" />
+        <!-- <t t-call="portal.frontend_layout"></t> -->
+        <body data-spy="scroll" data-target=".fixed-top">
+            <!-- Navigation -->
+            <t t-call="gsi_elearning.navbar_menu_elearning_template" />
+            <div style="height: 1210px">
+                <section class="vh-100">
+                    <div class="container py-5 h-100">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-12 col-md-8 col-lg-6 col-xl-5"
+                                style="max-width: 750px; margin-top: 50px">
+                                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                                    <div class="card-body p-5 text-center">
+                                        <div class="row">
+                                            <div class="col text-right">
+                                                <h3>
+                                                    <a href="/web/login" class="mb-3 login"
+                                                        id="login"
+                                                        style="font-family: Poppins; font-size: 32px; line-height: 30px; color: #0080BB; text-decoration: none">
+                                                        Login</a>
+                                                </h3>
+                                                <!-- <h3 class="mb-3 login" id="login"
+                                            style="font-family: Poppins; font-size: 32px;
+                                            line-height: 30px; color: #cdd5d8;">
+                                                Login</h3> -->
+                                            </div>
+                                            <hr class="vl" style="float: center; margin-top:-5px;" />
+                                            <div class="col text-left">
+                                                <h3>
+                                                    <a href="/web/signup" class="mb-3 signup"
+                                                        id="signup"
+                                                        style="font-family: Poppins; font-size: 32px; line-height: 30px; color: #0080BB; ; text-decoration: none">Sign
+                                                        Up</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <p
+                                            style="font-family: Poppins; font-size: 20px; line-height: 30px; color: #B3B3B3 ">Welcome
+                                            everyone, <br /> Let’s Grow, Share and Innovate with GSI
+                                            Academy!</p>
+                                        <br />
+                                        <form class="oe_signup_form" role="form" method="post"
+                                            t-if="not message">
+                                            <input type="hidden" name="csrf_token"
+                                                t-att-value="request.csrf_token()" />
+                                            <t t-call="gsi_elearning.auth_signup_fields">
+                                                <t t-set="only_passwords"
+                                                    t-value="bool(token and not invalid_token)" />
+                                            </t>
+                                            <p class="alert alert-danger" t-if="error" role="alert">
+                                                <t t-esc="error" />
+                                            </p>
+                                            <input type="hidden" name="redirect"
+                                                t-att-value="redirect" />
+                                            <input type="hidden" name="token" t-att-value="token" />
+                                            <div class="text-center oe_login_buttons pt-3">
+                                                <button type="submit" onclick="submitCheck()"
+                                                    class="btn btn-primary btn-lg btn-block">
+                                                    SIGN UP</button>
+                                                <a t-attf-href="/web/login?{{ keep_query() }}"
+                                                    class="btn btn-link btn-sm" role="button">Already
+                                                    have an account?</a>
+                                                <div class="o_login_auth" />
+                                                <!-- <button class="btn btn-primary btn-lg
+                                                btn-block"
+                                                type="submit"
+                                                style="font-size: 16px;">SIGN UP</button>
+                                            <button class="btn btn-lg btn-block btn-outline-primary"
+                                                type="submit" style="font-size: 16px;">
+                                                <b>
+                                                    <img style="width: 20px;" src="google.png" />
+                                                    SIGN UP WITH GOOGLE </b>
+                                            </button> -->
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container-fluid" id="signup_footer" style="margin-top: 500px; ">
+                <t t-call="gsi_elearning.footer_elearning_website" />
+            </div>
+            <script src="/gsi_elearning/static/src/js/custom.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+        </body>
+    </template>
+</odoo>
